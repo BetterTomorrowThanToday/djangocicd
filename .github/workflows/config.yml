@@ -36,4 +36,6 @@ jobs:
           docker build -t $REPO .
           docker tag $REPO:latest $NAME/$REPO:latest
           docker push $NAME/$REPO:latest
+        with:
+          platforms: linux/arm64
 
